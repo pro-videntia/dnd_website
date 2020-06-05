@@ -1,8 +1,8 @@
 {
   "name": "dnd_website",
   "version": "1.0.0",
-  "description": "An awesome website that combines dnd and dating. We use nuxt, vue, vuetify and an awesome designer. ",
-  "author": "Pro-videntia",
+  "description": "A project that aims to combined dnd with dating. ",
+  "author": "Pro-videntia ",
   "private": true,
   "scripts": {
     "dev": "nuxt",
