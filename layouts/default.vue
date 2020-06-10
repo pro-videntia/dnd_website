@@ -1,6 +1,5 @@
 <template>
   <v-app dark>
-    <h1>Hello</h1>
     <nuxt></nuxt>
   </v-app>
 </template>
