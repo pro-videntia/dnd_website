@@ -19,7 +19,6 @@
                 @click:append="showPassword = !showPassword"
               />
             </v-form>
-            <h1>{{ user.email }} --- {{ user.password }}</h1>
           </v-card-text>
           <div class="py-12"></div>
           <v-card-actions>
@@ -46,11 +45,12 @@ export default {
     };
   },
   methods: {
-      loginUser() {
-          this.user.email = "LOGGED IN"
-          this.user.password = "WOWOWOW"
-      }
-  }
+    loginUser() {
+      console.log(this.user);
+      this.user.email = "";
+      this.user.password = "";
+    },
+  },
 };
 </script>
 
