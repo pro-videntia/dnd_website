@@ -47,8 +47,6 @@ export default {
   methods: {
     loginUser() {
       console.log(this.user);
-      this.user.email = "";
-      this.user.password = "";
     },
   },
 };
