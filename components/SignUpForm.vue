@@ -2,7 +2,7 @@
   <v-app>
     <v-card width="400" class="mx-auto">
       <v-card-text>
-        <v-form>
+        <v-form @submit.prevent="onSubmit">
           <v-text-field
             label="First Name"
             prepend-icon="mdi-account-circle"
@@ -34,11 +34,9 @@
             v-model="password"
             :rules="passwordRules"
           ></v-text-field>
+          <v-btn color="success" type="submit">Signup</v-btn>
         </v-form>
       </v-card-text>
-      <v-card-actions>
-        <v-btn color="success" type="submit">Signup</v-btn>
-      </v-card-actions>
     </v-card>
   </v-app>
 </template>
@@ -68,6 +66,18 @@ export default {
       password: "",
       passwordRules: [(v) => !!v || "Password is required"],
     };
+  },
+  methods: {
+    onSubmit() {
+      let userObject = {
+        firstName: this.firstName,
+        lastName: this.lastName,
+        email: this.email,
+        password: this.password,
+      };
+
+      console.log(userObject);
+    },
   },
 };
 </script>
