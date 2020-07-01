@@ -34,7 +34,7 @@
             v-model="password"
             :rules="passwordRules"
           ></v-text-field>
-          <v-btn color="success" type="submit">Signup</v-btn>
+          <v-btn color="secondary" type="submit">Signup</v-btn>
         </v-form>
       </v-card-text>
     </v-card>

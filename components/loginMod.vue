@@ -23,9 +23,9 @@
             </v-card-text>
             <div class="py-12"></div>
             <v-card-actions>
-              <v-btn to="/signup" color="success">Register</v-btn>
+              <v-btn to="/signup" color="secondary">Register</v-btn>
               <v-spacer></v-spacer>
-              <v-btn color="info" @click="loginUser">Login</v-btn>
+              <v-btn color="primary" @click="loginUser">Login</v-btn>
             </v-card-actions>
           </v-card>
         </v-col>

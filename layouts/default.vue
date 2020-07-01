@@ -1,8 +1,10 @@
 <template>
-  <v-app dark>
+  <v-app light>
     <navbar></navbar>
     <v-content>
-      <nuxt></nuxt>
+      <v-app>
+        <nuxt></nuxt>
+      </v-app>   
     </v-content>
   </v-app>
 </template>
