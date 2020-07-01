@@ -1,7 +1,8 @@
 <template>
   <v-app>
-    <v-card width="400" class="mx-auto">
+    <v-card width="400" class="mx-auto mt-10">
       <v-card-text>
+        <h4 class="primary--text text-center text-uppercase">Create Account</h4>
         <v-form @submit.prevent="onSubmit">
           <v-text-field
             label="First Name"
@@ -34,10 +35,24 @@
             v-model="password"
             :rules="passwordRules"
           ></v-text-field>
-          <v-btn color="success" type="submit">Signup</v-btn>
+          <v-card-actions class="justify-center">
+            <v-btn x-large color="secondary" width="100%" type="submit"
+              >Signup</v-btn
+            >
+          </v-card-actions>
         </v-form>
       </v-card-text>
     </v-card>
+    <div class="mt-10">
+      <h5 class="grey--text text-center text-uppercase">
+        Already have an account?
+      </h5>
+      <h5 class="primary--text text-center text-uppercase">
+        <n-link to="/login">
+          Login Here
+        </n-link>
+      </h5>
+    </div>
   </v-app>
 </template>
 
