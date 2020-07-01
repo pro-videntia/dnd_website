@@ -2,32 +2,46 @@
   <v-app>
     <v-container>
       <v-row>
-        <v-col cols="12" md="8" offset-md="2">
-          <v-card class="mx-auto" width="100%">
+        <v-col cols="12" md="4" offset-md="4">
+          <v-card class="mx-auto mt-6" width="100%">
             <v-card-text>
+              <h4 class="primary--text text-center text-uppercase">Login</h4>
               <v-form>
                 <v-text-field
                   label="Email"
                   v-model="user.email"
-                  prepend-icon="mdi-account-circle"
+                  prepend-icon="mdi-email"
                 />
                 <v-text-field
                   :type="showPassword ? 'text' : 'password'"
                   label="Password"
                   v-model="user.password"
-                  prepend-icon="mdi-lock"
+                  prepend-icon="mdi-account-lock"
                   :append-icon="showPassword ? 'mdi-eye' : 'mdi-eye-off'"
                   @click:append="showPassword = !showPassword"
                 />
               </v-form>
             </v-card-text>
-            <div class="py-12"></div>
-            <v-card-actions>
-              <v-btn to="/signup" color="secondary">Register</v-btn>
-              <v-spacer></v-spacer>
-              <v-btn color="primary" @click="loginUser">Login</v-btn>
+            
+            <v-card-actions class="justify-center">
+              <v-btn
+                x-large
+                color="primary"
+                width="75%"
+                type="submit"
+                class="mb-4"
+                @click="loginUser"
+                >Login</v-btn
+              >
             </v-card-actions>
           </v-card>
+          <div class="mt-10">
+            <h5 class="grey--text text-center text-uppercase">
+              <n-link to="/signup">
+                Create an account
+              </n-link>
+            </h5>
+          </div>
         </v-col>
       </v-row>
     </v-container>
