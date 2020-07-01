@@ -1,6 +1,6 @@
 <template>
     <v-app-bar>
-        <v-toolbar-title>Dungeons and Dating</v-toolbar-title>
+        <v-toolbar-title class="header-1">Dungeons and Dating</v-toolbar-title>
         <v-spacer></v-spacer>
         <v-btn text rounded to="/">
             Home
