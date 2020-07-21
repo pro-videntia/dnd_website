@@ -1,8 +1,13 @@
 <template>
   <v-app>
     <v-container>
-      <v-row>
-        <v-col cols="12" md="4" offset-md="4">
+      <v-row justify="center">
+        <v-col cols="12" md="10">
+          <v-img src="/DnD_Login_Logo.png"></v-img>
+        </v-col>
+      </v-row>
+      <v-row justify="center">
+        <v-col cols="12" md="4">
           <v-card class="mx-auto mt-6" width="100%">
             <v-card-text>
               <h4 class="primary--text text-center text-uppercase">Login</h4>
