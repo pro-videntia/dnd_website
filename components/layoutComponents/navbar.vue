@@ -1,14 +1,11 @@
 <template>
-    <v-app-bar>
-        <v-toolbar-title class="header-1">Dungeons and Dating</v-toolbar-title>
+    <v-app-bar color="primary">
+        <v-toolbar-title to="/" class="header-1"><v-img src="/DnD_1C-Wht_Die_Logo_Horz.png" contain max-height="125px" max-width="175px"></v-img></v-toolbar-title>
         <v-spacer></v-spacer>
-        <v-btn text rounded to="/">
-            Home
-        </v-btn>
-        <v-btn text rounded to="/login">
+        <v-btn color="white" text rounded to="/login">
             Login
         </v-btn>
-        <v-btn text rounded to="/signup">
+        <v-btn color="white" text rounded to="/signup">
             Sign Up
         </v-btn>
         
